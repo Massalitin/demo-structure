@@ -12,6 +12,12 @@ const routes: Routes = [
     path: '',
     component: MainPageComponent,
   },
+  {
+    path: 'groups',
+    loadChildren: () => import('../groups-page/groups-page.module').then(
+      (m) => m.GroupsPageModule
+    ),
+  },
 ];
 
 @NgModule({

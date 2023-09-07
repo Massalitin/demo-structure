@@ -17,10 +17,18 @@ const routes: Routes = [
         (m) => m.LoginPageModule
       ),
   },
-  {
-    path: '**',
-    redirectTo: ''
-  },
+  // {
+  //   path: '**',
+  //   loadChildren: () =>
+  //     import('./pages/main-page/main-page.module').then(
+  //       (m) => m.MainPageModule
+  //     ),
+  //   pathMatch: 'full',
+  // },
+  // {
+  //   path: '**',
+  //   redirectTo: ''
+  // },
 ];
 
 @NgModule({
