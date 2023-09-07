@@ -1,0 +1,26 @@
+.navbar-header {
+  background-color: #27ae60;
+
+  img {
+    display: block;
+  }
+}
+
+.navbar-content-container {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  display: block;
+  cursor: pointer;
+
+  p {
+    margin: 0;
+  }
+}

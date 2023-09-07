@@ -1,0 +1,13 @@
+.main-container {
+  height: 100%;
+  display: flex;
+}
+
+.nav-sidebar {
+  flex-basis: 75px;
+  border-right: 1px solid var(--mat-sidenav-container-divider-color);
+}
+
+.main-drawer-container {
+    flex: 1;
+}

@@ -1,1 +1,13 @@
-<p>nav-sidebar works!</p>
+<div class="navbar-header">
+  <img src="/assets/budgie.svg" />
+</div>
+<div class="navbar-content-container">
+  <button
+    class="nav-button"
+    *ngFor="let item of navigationItems"
+    [routerLink]="item.path"
+  >
+    <mat-icon>{{ item.icon }}</mat-icon>
+    <p>{{ item.title }}</p>
+  </button>
+</div>
