@@ -11,13 +11,25 @@ const routes: Routes = [
   {
     path: '',
     component: MainPageComponent,
+    children: [
+      {
+        path: 'groups',
+        loadChildren: () => import('../groups-page/groups-page.module').then(
+          (m) => m.GroupsPageModule
+        ),
+      },
+      {
+        path: '**',
+        redirectTo: 'groups'
+      },
+    ]
   },
-  {
-    path: 'groups',
-    loadChildren: () => import('../groups-page/groups-page.module').then(
-      (m) => m.GroupsPageModule
-    ),
-  },
+  // {
+  //   path: 'groups',
+  //   loadChildren: () => import('../groups-page/groups-page.module').then(
+  //     (m) => m.GroupsPageModule
+  //   ),
+  // },
 ];
 
 @NgModule({

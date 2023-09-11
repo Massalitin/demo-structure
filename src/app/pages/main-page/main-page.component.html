@@ -1,9 +1,10 @@
 <div class="main-container">
   <app-nav-sidebar class="nav-sidebar"></app-nav-sidebar>
   <mat-drawer-container class="main-drawer-container">
-    <mat-drawer mode="side" opened>
+    <mat-drawer class="content-sidebar" mode="side" opened>
       <h2>Drawer content</h2>
-      <app-content-sidebar></app-content-sidebar>
+      <!-- <app-content-sidebar></app-content-sidebar> -->
+      <router-outlet></router-outlet>
     </mat-drawer>
     <mat-drawer-content>Main content</mat-drawer-content>
   </mat-drawer-container>

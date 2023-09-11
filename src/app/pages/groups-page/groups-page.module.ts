@@ -14,6 +14,9 @@ const routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
+  ],
+  exports: [
+    GroupsPageComponent
   ]
 })
 export class GroupsPageModule { }

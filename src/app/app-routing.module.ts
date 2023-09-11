@@ -6,9 +6,11 @@ const routes: Routes = [
     path: '',
     loadChildren: () =>
       import('./pages/main-page/main-page.module').then(
-        (m) => m.MainPageModule
+        (m) => {
+          console.log('DEBUG main-page load children m - ', m);
+          return m.MainPageModule;
+        }
       ),
-    pathMatch: 'full',
   },
   {
     path: 'login',
@@ -17,18 +19,10 @@ const routes: Routes = [
         (m) => m.LoginPageModule
       ),
   },
-  // {
-  //   path: '**',
-  //   loadChildren: () =>
-  //     import('./pages/main-page/main-page.module').then(
-  //       (m) => m.MainPageModule
-  //     ),
-  //   pathMatch: 'full',
-  // },
-  // {
-  //   path: '**',
-  //   redirectTo: ''
-  // },
+  {
+    path: '**',
+    redirectTo: ''
+  },
 ];
 
 @NgModule({
