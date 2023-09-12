@@ -3,16 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
-    loadChildren: () =>
-      import('./pages/main-page/main-page.module').then(
-        (m) => {
-          console.log('DEBUG main-page load children m - ', m);
-          return m.MainPageModule;
-        }
-      ),
-  },
-  {
     path: 'login',
     loadChildren: () =>
       import('./pages/login-page/login-page.module').then(
@@ -20,8 +10,11 @@ const routes: Routes = [
       ),
   },
   {
-    path: '**',
-    redirectTo: ''
+    path: '',
+    loadChildren: () =>
+      import('./pages/main-page/main-page.module').then(
+        (m) => m.MainPageModule
+      ),
   },
 ];
 
