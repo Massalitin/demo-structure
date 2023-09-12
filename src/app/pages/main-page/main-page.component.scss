@@ -14,3 +14,13 @@
 .content-sidebar {
   width: 350px;
 }
+
+.content-sidebar-header {
+  border-bottom: 1px solid var(--mat-sidenav-container-divider-color);
+  display: block;
+  padding: 4px 8px;
+}
+
+mat-drawer-content {
+  background: #fff;
+}

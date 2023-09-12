@@ -1,0 +1,26 @@
+.header-user-avatar {
+  margin-left: 10px;
+}
+
+.logged-user-avatar {
+  cursor: pointer;
+}
+
+.content-sidebar-header {
+  border-bottom: 1px solid var(--mat-sidenav-container-divider-color);
+  display: flex;
+  padding: 4px 8px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-block {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  font-size: 1.1em;
+  margin-left: 5px;
+}

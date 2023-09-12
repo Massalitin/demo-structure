@@ -1,0 +1,47 @@
+.outbound-message, .inbound-message, .system-message {
+    display: flex;
+    padding: 0 20px;
+}
+
+.message-element {
+    border-radius: 10%;
+    padding: 10px 8px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .message-time {
+        align-self: flex-end;
+        font-size: 0.8em;
+        color: #757575;
+    }
+
+    .message-content {
+        padding: 10px 15px 0 15px;
+    }
+}
+
+.outbound-message {
+  justify-content: flex-end;
+  .message-element {
+    background-color: #d5fcd5;
+  }
+}
+
+.inbound-message {
+  justify-content: flex-start;
+  .message-element {
+    background-color: #f5f5f6;
+  }
+}
+
+.system-message {
+  justify-content: center;
+  .message-element {
+    background-color: #b8b8c0;
+  }
+}
+
+.message-element {
+    display: flex;
+}

@@ -1,0 +1,13 @@
+<div
+  [ngClass]="{
+    'inbound-message': msg.type === msgTypes.INBOUND,
+    'outbound-message': msg.type === msgTypes.OUTBOUND,
+    'system-message': msg.type === msgTypes.SYSTEM
+  }"
+  class="message-row"
+>
+  <div class="message-element">
+    <span class="message-content">{{ msg.content }}</span>
+    <span class="message-time">{{ msg.timestamp | date : "shortTime" }}</span>
+  </div>
+</div>

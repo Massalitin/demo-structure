@@ -1,0 +1,18 @@
+<div class="content-sidebar-header">
+  <div class="user-block">
+    <app-avatar (click)="openUserProfile()" class="logged-user-avatar"
+      [fullName]="lu.loggedInUser.firstName + ' ' + lu.loggedInUser.secondName"
+      [color]="'#94dd94'"
+    ></app-avatar>
+
+    <span class="username">{{
+      lu.loggedInUser.firstName + " " + lu.loggedInUser.secondName
+    }}</span>
+  </div>
+
+  <div class="user-options">
+    <button mat-icon-button>
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </div>
+</div>

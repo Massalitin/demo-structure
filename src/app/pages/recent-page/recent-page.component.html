@@ -1,1 +1,19 @@
-<p>recent-page works!</p>
+<div>
+    <form>
+        <mat-form-field class="recent-chats-search">
+          <mat-label>Search</mat-label>
+          <input type="text" matInput>
+        </mat-form-field>
+      </form>
+      
+  <ul class="recent-chats-list">
+    <li *ngFor="let item of recentChats" (click)="openTab(item)">
+      <app-chat-item
+        [avatarColor]="item.avatarColor"
+        [chatName]="item.chatName"
+        [lastMessage]="item.lastMessage"
+      >
+      </app-chat-item>
+    </li>
+  </ul>
+</div>

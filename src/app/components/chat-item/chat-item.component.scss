@@ -1,0 +1,15 @@
+.chat-item {
+    padding: 10px 8px;
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+
+    &:hover {
+        background-color: #e0e0e0;
+    }
+}
+
+.chat-item-info {
+    margin-left: 10px;
+}
